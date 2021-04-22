@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="java/Rat.js"></script>
+<script src="java/Cat.js"></script>
+
+<script>
+    let cat = new Cat("Tom",10,Math.floor(Math.random()*10));
+    let rat = new Rat("Jerry",2,5,true);
+    console.log("Tom nặng: " +cat.weight+"--Tốc độ: "+cat.speed)
+    console.log("Jerry nặng: " +rat.weight+"--Tốc độ: "+rat.speed)
+    rat.say();
+    cat.say();
+    cat.catch();
+    cat.eat();
+    console.log(rat.name+" còn sống không? : "+rat.status)
+
+</script>
+
+
+</body>
+</html>
