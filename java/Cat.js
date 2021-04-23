@@ -9,7 +9,7 @@ class Cat {
         console.log(this.name + " kêu : meo meo");
     }
 
-    catch() {
+    catch(rat) {
         if (this.speed > rat.speed) {
             console.log(this.name + " bắt được chuột r hihi!");
             // return true;
@@ -19,7 +19,7 @@ class Cat {
         }
     }
 
-    eat() {
+    eat(rat) {
         if (this.speed > rat.speed){
             rat.status = false;
             this.weight += rat.weight;
